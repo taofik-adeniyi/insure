@@ -3,13 +3,13 @@ import { StyleSheet } from 'react-native'
 
 export const styles = StyleSheet.create({
     item: {
+        flex: 1,
         borderRadius: 10,
-        // border: '1px solid red',
-        // borderWidth: 1,
         backgroundColor: '#fff',
         width: '48%',
         elevation: 20,
         shadowColor: 'red',
+        margin: 5,
         marginBottom: 15,
         shadowColor: "#000",
         shadowOffset: {
@@ -18,7 +18,6 @@ export const styles = StyleSheet.create({
         },
         shadowOpacity: 0.25,
         shadowRadius: 3.84,
-
         elevation: 5,
     },
     image: {
@@ -26,7 +25,8 @@ export const styles = StyleSheet.create({
         height: 150,
         overflow: 'hidden',
         borderTopRightRadius: 10,
-        borderTopLeftRadius: 10
+        borderTopLeftRadius: 10,
+        resizeMode: 'cover'
     },
     text: {
         padding: 10,

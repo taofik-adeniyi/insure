@@ -18,5 +18,9 @@ export const styles = StyleSheet.create({
     fontWeight: '700',
     fontSize: 34,
     paddingVertical: 10,
+  },
+  container: {
+      flex: 1,
+      marginVertical: 20,
   }
 });
