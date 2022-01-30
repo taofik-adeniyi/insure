@@ -21,9 +21,14 @@ const Insure = () => {
         return data;
       };
 
-    const renderItem = ({ item }) => (
-        <InventoryItem item={item} />
-      );
+    const renderItem = ({ item }) => {
+        if (item.empty === true) {
+            return <View style={[styles.item, styles.itemInvisible]} />;
+          }
+        return (
+            <InventoryItem item={item} />
+        )
+    };
 
   return (
     <View style={styles.page}>
