@@ -60,8 +60,8 @@ const BottomTabs = () => {
             name="Home" 
             component={Home}
             options={{
-                tabBarIcon: ({focused, color, size}) => (
-                    <Entypo name="home" size={focused ? 30: 25} color={focused ? '#000' : 'grey'} />
+                tabBarIcon: ({focused}) => (
+                    <Entypo name="home" size={focused ? 30: 25} color={focused ? 'blue' : 'grey'} />
                 )
             }}
         />
@@ -70,7 +70,7 @@ const BottomTabs = () => {
             component={Study}
             options={{
                 tabBarIcon: ({focused, color, size}) => (
-                    <Ionicons name="umbrella" size={focused ? 30: 25} color={focused ? '#000' : 'grey'} />
+                    <Ionicons name="umbrella" size={focused ? 30: 25} color={focused ? 'blue' : 'grey'} />
                 )
             }}
         />
@@ -80,7 +80,7 @@ const BottomTabs = () => {
               component={Insure}
               options={{
                 tabBarIcon: ({focused, color, size}) => (
-                  <MaterialIcons name="inventory" size={focused ? 30: 25} color={focused ? '#000' : 'grey'} />
+                  <MaterialIcons name="inventory" size={focused ? 30: 25} color={focused ? 'blue' : 'grey'} />
                 )
               }}
               />
@@ -89,7 +89,7 @@ const BottomTabs = () => {
             component={SettingsScreen}
             options={{
                 tabBarIcon: ({focused, color, size}) => (
-                    <Ionicons name="search-sharp" size={focused ? 30: 25} color={focused ? '#000' : 'grey'} />
+                    <Ionicons name="search-sharp" size={focused ? 30: 25} color={focused ? 'blue' : 'grey'} />
                 )
             }}
         />
@@ -98,11 +98,10 @@ const BottomTabs = () => {
             component={Menu} 
             options={{
                 tabBarIcon: ({focused, color, size}) => (
-                    <Ionicons name="md-menu-sharp" size={focused ? 30: 25} color={focused ? '#000' : 'grey'} />
+                    <Ionicons name="md-menu-sharp" size={focused ? 30: 25} color={focused ? 'blue' : 'grey'} />
                 )
             }}
         />
-        {/* <Tab.Screen name="AddInventory" component={AddInventory} /> */}
         </Tab.Navigator>
     )
 }

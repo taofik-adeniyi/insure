@@ -9,11 +9,7 @@
  import React from 'react';
  import {
    StatusBar,
-   StyleSheet,
-   View, Text
  } from 'react-native';
-import Ionicons from 'react-native-vector-icons/Ionicons';
- 
  import MyNavigation from './src/navigation';
  
  
@@ -23,13 +19,6 @@ import Ionicons from 'react-native-vector-icons/Ionicons';
      <>
        <StatusBar barStyle={'dark-content'} />
        <MyNavigation />
-       {/* <View>
-         <Text>Hello</Text>
-         <Text>Hello</Text>
-         <Text>Hello</Text>
-         <Text>Hello</Text>
-       <Ionicons name="ios-camera-reverse" size={30} color={'red'} />
-       </View> */}
      </>
    );
  };
