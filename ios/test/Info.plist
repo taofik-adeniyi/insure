@@ -52,6 +52,11 @@
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
 
+	<key>NSCameraUsageDescription</key>
+	<string>For taking photos</string>
+
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>For saving photos</string>
 
 	<key>UIAppFonts</key>
 	<array>

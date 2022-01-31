@@ -7,6 +7,7 @@ import Ionicons from 'react-native-vector-icons/Ionicons';
 import {data} from './utils';
 import BottomSheet from 'react-native-gesture-bottom-sheet';
 import {InputDescription, InputText, InputNumber, MySelect} from './comps/Input';
+import { useNavigation } from '@react-navigation/native';
 
 
 
@@ -15,6 +16,7 @@ const numColumns = 2;
 
 const Insure = () => {
   const bottomSheet = useRef();
+  const navigation = useNavigation()
 
   const [text, onChangeText] = useState('');
   const [desc, onChangeDesc] = useState('');
@@ -67,12 +69,14 @@ const Insure = () => {
           </Pressable>
         </View>
 
-        <View style={{alignItems: 'center', justifyContent: 'center'}}>
+        <Pressable 
+          onPress={()=> navigation.navigate('Camera')}
+        style={{alignItems: 'center', justifyContent: 'center'}}>
           <Ionicons name="camera" size={50} color={'blue'} />
           <Text style={{fontSize: 16, fontWeight: '700', paddingTop: 10}}>
             Add photo
           </Text>
-        </View>
+        </Pressable>
 
         <InputText value={text} onChange={onChangeText} />
         
