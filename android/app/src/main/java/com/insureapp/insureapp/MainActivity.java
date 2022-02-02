@@ -1,4 +1,4 @@
-package com.test;
+package com.insureapp;
 
 import com.facebook.react.ReactActivity;
 import android.os.Bundle;

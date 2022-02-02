@@ -14,7 +14,6 @@ export const InputText = ({title='Name', value, onChange}) => {
         placeholder="Bracelet"
         onChangeText={onChange}
         value={value}
-        keyboardType="number-pad"
         // onPressIn={()=>setFocused(true)}
         // onBlur={()=>setFocused(true)}
         // onPressOut={()=>setFocused(false)}
@@ -34,7 +33,6 @@ export const InputDescription = ({title='Name', value, onChange}) => {
           placeholder="Optional"
           onChangeText={onChange}
           value={value}
-          keyboardType="number-pad"
           multiline
           // onFocus={()=>setFocused(!focused)}
         />
